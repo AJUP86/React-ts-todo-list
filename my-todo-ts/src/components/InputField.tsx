@@ -1,11 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
+import { TodosContext } from "../context/TodosContext";
+import { Todo } from "./model";
 import "./styles.css";
 
 const InputField = () => {
-  const [todo, setTodo] = useState<string>("");
+  const { todo, setTodo, todos, handleAdd } = useContext(TodosContext);
+  console.log(todos);
+  const inputRef = useRef<HTMLInputElement>(null);
   return (
-    <form className="input">
+    <form
+      className="input"
+      onSubmit={(e) => {
+        handleAdd(e);
+        inputRef.current?.blur();
+      }}
+    >
       <input
+        ref={inputRef}
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
         type="input"
