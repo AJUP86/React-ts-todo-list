@@ -18,7 +18,6 @@ const TodoList: React.FC = () => {
           >
             <span className="todos__heading">Active Tasks</span>
             {todos.map((todo, index) => {
-              console.log(todo.id);
               return (
                 <SingleTodo
                   index={index}
@@ -44,7 +43,6 @@ const TodoList: React.FC = () => {
           >
             <span className="todos__heading">Completed Tasks</span>
             {completedTodos.map((todo, index) => {
-              console.log(todo);
               return (
                 <SingleTodo
                   todo={todo}
