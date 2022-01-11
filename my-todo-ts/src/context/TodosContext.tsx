@@ -45,7 +45,7 @@ const TodosProvider = ({ children }: Props) => {
     let active = todos;
     let complete = completedTodos;
 
-    if (source.droppableId === "TodoList") {
+    if (source.droppableId === "TodosList") {
       add = active[source.index];
       active.splice(source.index, 1);
     } else {
