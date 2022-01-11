@@ -4,8 +4,7 @@ import { Todo } from "./model";
 import "./styles.css";
 
 const InputField = () => {
-  const { todo, setTodo, todos, handleAdd } = useContext(TodosContext);
-  console.log(todos);
+  const { todo, setTodo, handleAdd } = useContext(TodosContext);
   const inputRef = useRef<HTMLInputElement>(null);
   return (
     <form
