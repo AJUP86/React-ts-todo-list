@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 import { TodosContext } from "../context/TodosContext";
-import { Todo } from "./model";
 import "./styles.css";
 
 const InputField = () => {
