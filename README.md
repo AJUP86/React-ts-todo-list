@@ -4,6 +4,6 @@
 
 This is a tutorial that  i had coded along  in order to learn the basics of Typescript using React. 
 
-I noticed that they way the original app was builded had littled details that needed to be changed. for example passsing props from the top component to nested children of children, so as my contribution i had created a context that serve the functionality to the entire react tree. 
+I noticed that they way the original app was builded had little details that needed to be changed. for example passsing props from the top component to nested children of children, so as my contribution i had created a context that serve the functionality to the entire react tree. 
 
 Yo will find the original repo here: https://github.com/piyush-eon/react-typescript-taskify 
