@@ -2,7 +2,7 @@
 
 # Demo: https://clever-ardinghelli-b13fe6.netlify.app/
 
-This is a tutorial that  i had coded along that  in order to learn the basics of Typescript using React. 
+This is a tutorial that  i had coded along  in order to learn the basics of Typescript using React. 
 
 I noticed that they way the original app was builded had littled details that needed to be changed. for example passsing props from the top component to nested children of children, so as my contribution i had created a context that serve the functionality to the entire react tree. 
 
